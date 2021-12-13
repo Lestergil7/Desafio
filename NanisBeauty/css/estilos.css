@@ -1,0 +1,443 @@
+
+.fondo__img{
+    height: 170px;
+    margin-left: 20px;
+
+}
+
+
+.fondo__barra{
+    margin-top: 00px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-top: solid 40px #fecbca;
+}
+
+.fondo__navegacion ul{
+    list-style: none;
+    margin-top: 4rem;
+    display: flex;
+    text-align: center;
+    gap: 20px;
+    
+}
+
+.fondo__navegacion a{
+    text-decoration: none;
+    color: #fecbca;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.bg{
+background-image: url(../img/foto2.jpg);
+background-position: center center;
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-color: rgba(0, 0, 0, 0.6);
+background-blend-mode: darken;
+background-size: cover;
+width: 100%;
+height: 600px;
+border-bottom: solid 7px #fecbca;
+ 
+}
+
+.bg__texto{
+    padding-top: 200px;
+    padding-left: 50px;
+}
+
+.bg__titulo{
+    font-family: 'Cardo',serif;
+    font-weight: 400;
+    font-size: 60px;
+    letter-spacing: 1px;
+    color: #fecbca;
+}
+
+.bg__span{
+    color: white;
+    font-family: 'Montserrat', sans-serif ;
+    letter-spacing: 0.5px;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.boton{
+    text-decoration: none;
+    background-color: #fecbca;
+    padding: 15px 30px;
+    border: solid 1px #fecbca;
+    text-transform: uppercase;
+    font-family:'Montserrat', sans-serif ;
+    color: white;
+    font-weight: 800;
+}
+
+.seccion__fondo{
+    background-image: url(../img/fondo.jpg);
+    background-repeat: repeat;
+    height: 620px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* gap: 1rem; */
+    
+}
+
+.seccion__info{
+    padding-top: 115px; 
+    margin-right: 0px;
+    padding-left: 30px;
+    position: absolute;
+}
+.seccion__foto{
+    border: solid 10px #fecbca;
+}
+.seccion__contenedor{
+    background-color: white;
+    height: 400px;
+    padding-top: 100px;
+    margin-left: 500px;
+    margin-top: 60px;
+    width: 800px;
+    border: solid 1px black;
+    
+
+}
+
+.seccion__texto{
+    text-align: center;
+    font-family:'Cardo', serif ;
+    font-weight: 500;
+    letter-spacing: 3px;
+    font-size: 20px;
+ 
+}
+
+.seccion__texto2{
+    font-family:'Montserrat', sans-serif ;
+    text-align:start;
+    line-height: 25px;
+    color: grey;
+    font-weight: 500;
+}
+
+.seccion__div{
+    margin-top: 60px;
+    margin-left: 100px;
+}
+
+.producto__texto{
+    font-family: 'Cardo', serif;
+    text-align: center;
+    font-style: italic;
+    color: black;
+    font-weight: 400;
+    font-size: 80px;
+    margin: 0px;
+    margin-bottom: 0px;
+}
+
+.producto__texto2{
+    margin-top: 5px;
+    text-align: center;
+    font-family:'Montserrat', sans-serif ;
+    letter-spacing: 1px;
+    font-weight: 500;
+    font-style: unset;
+    color: #e6a09f;
+    font-size: 25px;
+    line-height: 30px;
+}
+.producto__imagen{
+    height: 300px;
+    width: 300px;
+    margin-left: 30px;
+}
+
+.contenedor{
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    justify-items: center;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    height: 450px;
+    border-bottom: solid 10px #fecbca;
+
+  }
+ 
+
+
+  .producto__contenedor{
+      border: solid 1px rgb(209, 189, 189);
+      height: 400px;
+      width: 350px;
+     
+  }
+
+.texto{
+    text-align: center;
+    font-family: 'Cardo', serif;
+    text-align: center;
+    font-style: italic;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.galeria{
+    background-image: url(../img/fondo.jpg);
+    height: 750px;
+}
+  
+.galeria__texto{
+    font-family: 'Cardo', serif;
+    text-align: center;
+    font-style: italic;
+    color: black;
+    font-weight: 400;
+    font-size: 80px;
+    margin:0px;
+    padding-top: 20px;
+}
+
+.galeria__texto2{
+    margin-top: 5px;
+    text-align: center;
+    font-family:'Montserrat', sans-serif ;
+    letter-spacing: 1px;
+    font-weight: 500;
+    font-style: unset;
+    color: #e6a09f;
+    font-size: 25px;
+    line-height: 30px;
+    padding-bottom: 30px;
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr) repeat(3, 0);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+    
+    .div1 { grid-area: 1 / 1 / 2 / 2; }
+    .div2 { grid-area: 1 / 2 / 2 / 3; }
+    .div3 { grid-area: 1 / 3 / 2 / 4; }
+    .div4 { grid-area: 1 / 4 / 2 / 5; }
+    .div5 { grid-area: 1 / 5 / 2 / 6; }
+    .div6 { grid-area: 2 / 1 / 3 / 2; }
+    .div7 { grid-area: 2 / 2 / 3 / 3; }
+    .div8 { grid-area: 2 / 3 / 3 / 4; }
+    .div9 { grid-area: 2 / 4 / 3 / 5; }
+    .div10 { grid-area: 2 / 5 / 3 / 6; }
+    
+.galeria__foto{
+    height: 200px;
+    width: 100%;
+}    
+
+.piso_footer{
+    background-color: #e6a09f;
+    padding: 15px;
+    border-top: solid 1px black;
+}
+
+.piso__imagen{
+    height: 120px;
+    margin-left: 100px;
+}
+
+.piso__redes{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    align-items: flex-end;
+    justify-content: space-between;
+
+}
+
+.piso__redes2{
+    display: flex;
+    margin-right: 150px;
+}
+
+.blog{
+    background-image: url(../img/foto11.jpg);
+    background-size: cover;
+    height: 300px;
+    width: 100%;
+    background-attachment: fixed;
+    background-position: center center;
+    background-color: rgba(0, 0, 0, 0.6);
+    background-blend-mode: darken;
+}
+
+.blog__texto{
+    display: flex;
+    justify-content: center;
+    padding-top: 90px;
+    color: white;
+    font-family: 'Cardo', serif;
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: 2px
+}
+
+.entrada__fondo{
+    background-image: url(../img/fondo.jpg);
+    height: 2600px;
+}
+
+.entrada__imagen{
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+}
+
+.entrada__contenido{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: 70px;
+    margin-bottom: 30px;
+}
+
+h4{
+    font-family: 'Cardo', serif;
+    text-align: center;
+    font-style: italic;
+    color: black;
+    font-weight: 400;
+    font-size: 40px;
+}
+.boton2{
+    text-decoration: none;
+    background-color: #fecbca;
+    padding: 15px 30px;
+    border: solid 1px #fecbca;
+    text-transform: uppercase;
+    font-family:'Montserrat', sans-serif ;
+    color: white;
+    font-weight: 800;
+    margin-top: 20px;
+    border: solid 1px black;
+}
+
+.seccion__texto3{
+    font-family:'Montserrat', sans-serif ;
+    text-align:start;
+    line-height: 25px;
+    color: black;
+    font-weight: 500;
+}
+
+.agenda{
+    background-image: url(../img/fondo.jpg);
+    background-repeat:repeat;
+    background-position: center center;
+    height: 900px;
+    padding-top: 120px;
+}
+.agenda__texto{
+    font-family: 'Cardo', serif;
+    text-align: center;
+    font-style: italic;
+    color: #fecbca;
+    padding-top: 100px;
+    font-weight: 400;
+    font-size: 40px;
+}
+
+.area{
+   background-color: white;
+   height: 800px;
+   width: 1000px;
+   margin: 0 auto;
+   /* background-image: url(../img/foto15.jpg);
+   background-repeat: repeat;
+   background-position: center center;
+   background-color: rgba(0, 0, 0, 0.7);
+   background-blend-mode: darken;
+    */
+  
+   -webkit-box-shadow: 3px 2px 23px 13px rgba(0,0,0,0.75);
+   -moz-box-shadow: 3px 2px 23px 13px rgba(0,0,0,0.75);
+   box-shadow: 3px 2px 23px 13px rgba(0,0,0,0.75);
+   
+}
+.area{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+}
+
+.area__foto{
+    background-image: url(../img/foto15.jpg);
+    background-repeat: repeat;
+    background-color: rgba(0, 0, 0, 0.6);
+    background-blend-mode: darken;
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+    padding-top:50px ;
+    padding-right: 150px;
+}
+
+.campo{
+    display: flex;
+    margin-bottom: 2rem;
+    gap: 2rem;
+}
+
+.campo__label{
+    flex: 0 0 4rem;
+    font-family: 'Cardo',serif;
+    font-size: 25px;
+    font-style: italic;
+    font-weight: 400;
+}
+
+.campo__field{
+    /* flex: 2;  */
+    background-color: rgb(241, 226, 226);
+    border: 1px solid grey;
+    font-family: 'Cardo',serif;
+}
+
+.campo__field--textarea{
+    width: 210px;
+    height: 10rem;
+
+}
+
+.agenda{
+    font-family: 'Cardo', serif;
+  
+}
+
+.agenda__datos{
+    font-family: 'Cardo', serif;
+    text-align: center;
+    font-style: italic;
+    color: white;
+    font-size: 25px;
+}
+
+.icon{
+    margin-left: 60px;
+}
+
