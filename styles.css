@@ -1,0 +1,126 @@
+:root {
+    --primary: #A5C882;
+    --secondary: #D33F49;
+    --light: #fff;
+    --dark: #000;
+    --diabled: #e7e7e7;
+}
+
+body {
+  
+    margin: 0;
+    height: 100vh;
+    background-color: var(--diabled);
+}
+
+/* *:first-letter {
+    text-transform: capitalize;
+} */
+
+.roundBorder {
+    border-radius: 5px;
+}
+
+.list {
+    margin: 25px auto;
+    padding: 50px;
+    background-color: var(--light);
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+}
+
+.calendar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.nineteen{
+    font-family: 'Lato';
+    color: var(--dark);
+    font-weight: bold;
+    font-size: 40px;
+}
+.december{
+    line-height: 0px;
+    font-family: 'Lato';
+    color: var(--dark);
+    font-weight: bold;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+
+.span{
+    font-family: 'Lato';
+    color: var(--dark);
+}
+
+.day{
+    font-family: 'Lato';
+    color: var(--dark);
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+.title{
+   
+    font-family: 'Lato';
+    text-transform: uppercase;
+    font-size: 30px;
+    
+}
+
+
+
+input {
+    padding: 10px;
+    border: none;
+    padding-left: 10px;
+    background-color: var(--diabled);
+}
+
+input:focus {
+    outline: none;
+}
+
+.addTaskButton,
+.deleteButton {
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.addTaskButton {
+    height: 35px;
+    border-radius: 3px;
+    padding: 0 10px;
+    font-size: 18px;
+    background-color: var(--diabled);
+}
+
+.deleteButton {
+    padding: 10px;
+    background-color: var(--secondary);
+    color: var(--light);
+}
+
+#task{
+    background-color: var(--primary);
+    color: var(--light);
+    padding: 0.5px;
+    font-family:'Lato';
+    font-size: 17px;
+    margin-top: 15px;
+    border-radius: 5px;
+    
+}
+
+.text{
+    margin-left: 10px;
+}
