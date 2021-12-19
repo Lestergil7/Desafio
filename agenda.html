@@ -39,31 +39,33 @@
         <section class="area">
 
             <div>
-                <h2 class="agenda__texto">Agenda tu cita</h2>
+                <h2 class="agenda__texto">Dejanos tu opinion</h2>
 
-                <form class="formulario">
+                <form id="form-usuario" class="formulario">
+
                     <div class="campo">
                         <label class="campo__label" for="Nombre">Nombre</label>
-                        <input class="campo__field" type="text" placeholder="Nombre" id="nombre">
+                        <input  id="input-nombre-usuario" class="campo__field" type="text" placeholder="Nombre" id="nombre">
                     </div>
 
                     <div class="campo">
                         <label class="campo__label" for="Nombre">Apellido</label>
-                        <input class="campo__field" type="text" placeholder="Apellido" id="apellido">
+                        <input  id="input-apellido-usuario" class="campo__field" type="text" placeholder="Apellido" id="apellido">
                     </div>
         
-                    <div class="campo">
+                    <!-- <div class="campo">
                         <label class="campo__label" for="Email">Numero</label>
                         <input  class="campo__field" type="number" placeholder="Tu Numero" id="numero">
-                    </div>
+                    </div> -->
         
                     <div class="campo">
                         <label class="campo__label" for="mensaje">Mensaje</label>
-                        <textarea class="campo__field campo__field--textarea" id="mensaje"></textarea>
+                        <textarea id="input-mensaje-usuario" class="campo__field campo__field--textarea" id="mensaje"></textarea>
                     </div>
         
                     <div class="campo">
-                        <input type="submit" value="Enviar" class="boton boton--primario">
+                        
+                        <input type="submit" value="Enviar" class="boton ">
         
                     </div>
                    
@@ -107,6 +109,13 @@
 
         </section>
 
+        <br>
+        <hr>
+  
+        <div id="mensajes-lista">
+
+        </div>
+
     </main>
 
     <footer class="piso_footer">
@@ -146,5 +155,7 @@
         </div>
      </footer>
     
+     <script type="module" src="js/index.js"></script>
+
 </body>
 </html>
