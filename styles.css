@@ -124,3 +124,12 @@ input:focus {
 .text{
     margin-left: 10px;
 }
+
+#warnings{
+    text-align: center;
+    font-family:'Lato';
+    font-size: 17px;
+    color: var(--secondary);
+  
+    
+}

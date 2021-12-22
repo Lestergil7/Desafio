@@ -12,20 +12,37 @@ const  Mensajes = usuario.findAllTasks();
 
 console.log(usuario.findAllTasks())
 
+const parrafo = document.getElementById('warnings')
 const formTarea = document.getElementById('form-tarea')
 const inputMensajeTarea = document.getElementById('input-mensaje-tarea')
 
 
-    formTarea.addEventListener( 'submit', () => {
+    formTarea.addEventListener( 'submit', (e) => {
 
-        const mensaje = inputMensajeTarea.value
-        const prod = new Datos(mensaje)
-        usuario.createTask(prod)
+        
+
+        let warning = ""
+
+        if(inputMensajeTarea.value == ""){
+            warning = `No ingresaste una tarea`
+            parrafo.innerHTML = warning
+            e.preventDefault()
+
+        } else {
+
+            const mensaje = inputMensajeTarea.value
+            const prod = new Datos(mensaje)
+            usuario.createTask(prod)
+        }
+
+        
+        
     })
 
     
 
 
 renderList ('tareas-lista', Mensajes)
+
 
 
