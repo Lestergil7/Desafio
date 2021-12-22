@@ -5,11 +5,11 @@ export const renderList = (listaId, list) => {
     for ( const item of list ) {
 
         const itemList = document.createElement('div')
-        itemList.setAttribute('id', "task")
+        itemList.setAttribute('class', "task")
 
         itemList.innerHTML = `
                               <p class="text"> ${item.mensaje} </p>
-                                  
+                                   
                              `
 
         listaContainer.appendChild( itemList )

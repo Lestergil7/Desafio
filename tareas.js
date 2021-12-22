@@ -16,12 +16,5 @@ export class Tareas{
     
     }
 
-    deleteTask (tarea) {
-
-        const index = this.lista.indexOf( tarea );
-
-       localStorage.removeItem(this.lista.splice( index, 1 )) ;
-
-
-    }
+    
 }

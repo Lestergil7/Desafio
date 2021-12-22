@@ -110,7 +110,7 @@ input:focus {
     color: var(--light);
 }
 
-#task{
+.task{
     background-color: var(--primary);
     color: var(--light);
     padding: 0.5px;
