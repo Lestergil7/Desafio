@@ -44,14 +44,15 @@ const inputMensajeTarea = document.getElementById('input-mensaje-tarea')
 
 renderList ('lista', Mensajes)
 
-const deleteTarea = document.getElementById('input-delete-tarea')
 
-deleteTarea.addEventListener ('click', (ev) =>{
+// const deleteTarea = document.getElementById('input-delete-tarea'  )
 
+// deleteTarea.addEventListener ('click', (ev) =>{
 
-    let eliminar = ev.target.parentElement;
-    let nodopadre = eliminar.parentNode;
-    nodopadre.removeChild(eliminar);
-})
+//     let eliminar = ev.target.parentElement;
+//     let nodopadre = eliminar.parentNode;
+//     nodopadre.removeChild(eliminar);
+// })
+
 
 
