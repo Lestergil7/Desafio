@@ -34,7 +34,7 @@
             <form id="form-tarea" style=" display:flex;  gap: 15px; justify-content: space-evenly;">
                 <input type="text" id="input-mensaje-tarea" autocomplete="off" placeholder="Nueva tarea" class="roundBorder">
                 <button type="submit" class="addTaskButton" >+</button>
-                <!-- <button type="button" id="input-delete-tarea" class= " deleteButton roundBorder" >Eliminar</button> -->
+                <button type="button" id="input-delete-tarea" class= " deleteButton roundBorder" >Eliminar</button>
             </form>
             <p id="warnings"></p>
         </div>
@@ -49,27 +49,7 @@
     </div>
 </body>
 
-<!-- <script>
-
-    function eliminarTarea(){
-
-let eliminar = ev.target.parentElement;
-let nodopadre = eliminar.parentNode;
-nodopadre.removeChild(eliminar);
-
-}
-
-function eliminarTarea(id){
-
-console.log(id)
-let botonEliminar = document.getElementById('id')
-let eliminar = botonEliminar.parentElement;
-let nodopadre = eliminar.parentNode;
-nodopadre.removeChild(eliminar);
-
-
-}
-</script> -->
 
 <script type="module" src="index.js"></script>
+<script src="js/jquery-3.5.1.min.js"></script>
 </html>

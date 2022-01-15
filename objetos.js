@@ -1,6 +1,6 @@
 export class Datos {
 
-    constructor( mensaje) {
+    constructor(mensaje) {
     
         this.mensaje = mensaje;
       
