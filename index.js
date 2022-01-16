@@ -54,6 +54,12 @@ renderList ('lista', Mensajes)
 
 // })
 
+// $(document).ready(
+//     function(){
+//         alert("listo")
+//     }
+// )
+
 
 // $('#input-delete-tarea' ).click(function() {
 //     $( '.task' ).remove();
