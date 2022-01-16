@@ -47,12 +47,33 @@ renderList ('lista', Mensajes)
 
 
 
-$(document).ready(function() {
-    $("#input-delete-tarea").on('click',function(){
-        $(".task").empty()
-    })
+// $(document).ready(function() {
+//     $("#input-delete-tarea").on('click',function(){
+//         $(".task").remove()
+//     })
 
-})
+// })
+
+
+// $( '#input-delete-tarea' ).click(function() {
+//     $( '.task' ).remove();
+//   });
+
+// $("#lista").click((e) => { 
+//     $(".task").remove();
+// });
+
+// $(document).ready(
+//     function(){
+//         $("#lista").on("click",".input-delete-tarea",
+//         function(objeto){
+        
+//             $(objeto.target).parent().remove()
+//     }
+
+// );
+
+
 
 
       

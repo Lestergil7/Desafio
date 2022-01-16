@@ -30,11 +30,11 @@
             </div>
         </div>
 
-        <div>
+        <div >
             <form id="form-tarea" style=" display:flex;  gap: 15px; justify-content: space-evenly;">
                 <input type="text" id="input-mensaje-tarea" autocomplete="off" placeholder="Nueva tarea" class="roundBorder">
                 <button type="submit" class="addTaskButton" >+</button>
-                <button type="button" id="input-delete-tarea" class= " deleteButton roundBorder" >Eliminar</button>
+                <!-- <button type="button" id="input-delete-tarea" class= " deleteButton roundBorder" >Eliminar</button> -->
             </form>
             <p id="warnings"></p>
         </div>
@@ -47,6 +47,16 @@
 
 
     </div>
+    <script>
+
+        $("#lista").on("click","#input-delete-tarea"
+        ,function(objeto){
+
+        $(objeto.target).parent().remove();
+    })
+    </script>
+
+
 </body>
 
 
