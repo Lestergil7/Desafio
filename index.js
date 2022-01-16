@@ -54,30 +54,15 @@ renderList ('lista', Mensajes)
 
 // })
 
-// $(document).ready(
-//     function(){
-//         alert("listo")
-//     }
-// )
+$(document).ready(function() {
+    $("#lista").on('click',function(){
+        $("#input-delete-tarea").parent().remove()
+    })
+
+})
 
 
-// $('#input-delete-tarea' ).click(function() {
-//     $( '.task' ).remove();
-//   });
 
-// $("#lista").click((e) => { 
-//     $(".task").remove();
-// });
-
-// $(document).ready(
-//     function(){
-//         $("#lista").on("click",".input-delete-tarea",
-//         function(objeto){
-        
-//             $(objeto.target).parent().remove()
-//     }
-
-// );
 
 
 
