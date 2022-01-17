@@ -65,13 +65,19 @@ renderList ('lista', Mensajes)
 $("#lista").on("click",".task",
   function(objeto){
       $(objeto.target).parent().remove()
+
+      localStorage.removeItem('tareas','mensaje')
   }
 
- 
+
 )
 
+// function storage () {
 
+//     localStorage.removeItem('tareas','mensaje')
+// }
       
+// storage()
 
 
 
