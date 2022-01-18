@@ -36,18 +36,33 @@ body {
     align-items: center;
     
 }
-.nineteen{
+.dia{
     font-family: 'Lato';
     color: var(--dark);
     font-weight: bold;
     font-size: 40px;
 }
-.december{
+.mes{
     line-height: 0px;
     font-family: 'Lato';
     color: var(--dark);
     font-weight: bold;
 }
+.año{
+    line-height: 0px;
+    font-family: 'Lato';
+    color: var(--dark);
+    font-weight: bold;
+}
+
+.diaSemana{
+    font-family: 'Lato';
+    color: var(--dark);
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 0.5px;
+}
+
 
 .flex{
     display: flex;
@@ -60,13 +75,6 @@ body {
     color: var(--dark);
 }
 
-.day{
-    font-family: 'Lato';
-    color: var(--dark);
-    font-weight: bold;
-    font-size: 20px;
-    letter-spacing: 1px;
-}
 
 .title{
    

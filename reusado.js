@@ -45,3 +45,20 @@
 //     let nodopadre = eliminar.parentNode;
 //     nodopadre.removeChild(eliminar);
 // }    
+
+
+
+// $(document).ready(function() {
+//     $("#input-delete-tarea").on('click',function(){
+//         $(".task").remove()
+//     })
+
+// })
+
+
+// $(document).ready(function() {
+//     $("#lista").on('click',function(){
+//         $("#input-delete-tarea").parent().remove()
+//     })
+
+// })

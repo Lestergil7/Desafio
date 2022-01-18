@@ -41,26 +41,14 @@ const inputMensajeTarea = document.getElementById('input-mensaje-tarea')
 
     
 
-
 renderList ('lista', Mensajes)
 
 
 
 
-// $(document).ready(function() {
-//     $("#input-delete-tarea").on('click',function(){
-//         $(".task").remove()
-//     })
-
-// })
 
 
-// $(document).ready(function() {
-//     $("#lista").on('click',function(){
-//         $("#input-delete-tarea").parent().remove()
-//     })
 
-// })
 
 $("#lista").on("click",".task",
   function(objeto){
@@ -72,13 +60,38 @@ $("#lista").on("click",".task",
 
 )
 
-// function storage () {
+(function(){
 
-//     localStorage.removeItem('tareas','mensaje')
-// }
-      
-// storage()
+    var actualizarFecha = function(){
 
+        var fecha = new Date(),
+            diaSemana = fecha.getDay(),
+            dia = fecha.getDate(),
+            mes = fecha.getMonth(),
+            año = fecha.getFullYear();
+
+
+        var pDiaSemana = document.getElementById('diaSemana'),
+            pDia = document.getElementById('dia'),
+            pMes = document.getElementById('mes'),
+            pAño = document.getElementById('año');
+
+
+        var semana = ['d o m i n g o', 'l u n e s', 'm a r t e s', 'm i e r c o l e s', 'j u e v e s', 'v i e r n e s', 's a b a d o']
+        pDiaSemana.textContent = semana[diaSemana];
+
+        var meses = [ 'ENE', 'FEB', 'MAR', 'ABR','MAY','JUN','JUL','AGO','SEP','OCT','NOV','DEC']
+        pMes.textContent = meses[mes];
+
+        pAño.textContent = año;
+
+        pDia.textContent = dia;
+
+    };
+
+  actualizarFecha();
+
+}())
 
 
 
