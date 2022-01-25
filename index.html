@@ -30,28 +30,34 @@
             </div>
         </div>
 
-        <div >
-            <form id="form-tarea" style=" display:flex;  gap: 15px; justify-content: space-evenly;">
-                <input type="text" id="input-mensaje-tarea" autocomplete="off" placeholder="Nueva tarea" class="roundBorder">
-                <button type="submit" class="addTaskButton" >+</button>
+        <div class="card-content">
+                    
+            <div>
+                <form id="task-form" class="forma" style=" display:flex;  gap: 15px; justify-content: space-evenly;"">
+                    <div>
+                        <input type="text" autocomplete="off" placeholder="Nueva Tarea" name="task" id="task">
+                    </div>
+                    <button type="submit" class="addTaskButton" >+</button>
+                </form>
                 
-            </form>
-            <p id="warnings"></p>
+            </div>
         </div>
+        <div class="card-action">
+            
+            
+            <div class="collection" style="margin-top: 20px;">
 
-        <div id="lista">
-           
+            </div>
+           <button class="clear-tasks">Clear Tasks</button>
         </div>
-       
-
-
-
+             
+    
     </div>
   
 
 </body>
 
 
-<script type="module" src="index.js"></script>
-<script src="jquery.min.js"> </script>
+<script type="module" src="js/index.js"></script>
+
 </html>
