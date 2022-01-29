@@ -1,16 +1,17 @@
 :root {
-    --primary: #A5C882;
-    --secondary: #D33F49;
-    --light: #fff;
-    --dark: #000;
-    --diabled: #e7e7e7;
+  --primary: #a5c882;
+  --secondary: #d33f49;
+  --light: #fff;
+  --dark: #000;
+  --diabled: #e7e7e7;
+  --bg-color: #2c2c2c;
+  --text-color: #f3f6f5;
 }
 
 body {
-  
-    margin: 0;
-    height: 100vh;
-    background-color: var(--dark);
+  margin: 0;
+  height: 100vh;
+  background-color: var(--dark);
 }
 
 /* *:first-letter {
@@ -18,156 +19,241 @@ body {
 } */
 
 .roundBorder {
-    border-radius: 5px;
+  border-radius: 5px;
 }
 
 .list {
-    margin: 25px auto;
-    padding: 50px;
-    background-color: var(--light);
-    width: 100%;
-    max-width: 350px;
-    height: auto;
+  margin: 25px auto;
+  padding: 50px;
+  background-color: var(--light);
+  width: 100%;
+  max-width: 350px;
+  height: auto;
 }
 
-.calendar{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    
+.calendar {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
-.dia{
-    font-family: 'Lato';
-    color: var(--dark);
-    font-weight: bold;
-    font-size: 40px;
+.dia {
+  font-family: "Lato";
+  color: var(--dark);
+  font-weight: bold;
+  font-size: 40px;
 }
-.mes{
-    line-height: 0px;
-    font-family: 'Lato';
-    color: var(--dark);
-    font-weight: bold;
+.mes {
+  line-height: 0px;
+  font-family: "Lato";
+  color: var(--dark);
+  font-weight: bold;
 }
-.año{
-    line-height: 0px;
-    font-family: 'Lato';
-    color: var(--dark);
-    font-weight: bold;
-}
-
-.diaSemana{
-    font-family: 'Lato';
-    color: var(--dark);
-    font-weight: bold;
-    font-size: 20px;
-    letter-spacing: 0.5px;
+.año {
+  line-height: 0px;
+  font-family: "Lato";
+  color: var(--dark);
+  font-weight: bold;
 }
 
-
-.flex{
-    display: flex;
-    align-items: center;
-    gap: 3px;
+.diaSemana {
+  font-family: "Lato";
+  color: var(--dark);
+  font-weight: bold;
+  font-size: 20px;
+  letter-spacing: 0.5px;
 }
 
-.span{
-    font-family: 'Lato';
-    color: var(--dark);
+.flex {
+  display: flex;
+  align-items: center;
+  gap: 3px;
 }
 
-
-.title{
-   
-    font-family: 'Lato';
-    text-transform: uppercase;
-    font-size: 30px;
-    font-weight: 700;
-    text-align: center;
-    padding-top: 60px;
+.span {
+  font-family: "Lato";
+  color: var(--dark);
 }
 
-.clear-tasks{
-    list-style: none;
-    text-decoration: none;
-    font-family: 'Lato';
-    background-color: #D33F49;
-    color: #fff;
-    padding: 10px;
-    border-radius: 5px;
-    margin-top: 10px;
-    border: none;
+.title {
+  font-family: "Lato";
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+  padding-top: 40px;
+  margin-bottom: 40px;
 }
 
+.clear-tasks {
+  list-style: none;
+  text-decoration: none;
+  font-family: "Lato";
+  background-color: #d33f49;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+  border: none;
+}
 
 input {
-    padding: 10px;
-    border: none;
-    padding-left: 10px;
-    background-color: var(--diabled);
+  padding: 10px;
+  border: none;
+  padding-left: 10px;
+  background-color: var(--diabled);
 }
 
 input:focus {
-    outline: none;
+  outline: none;
 }
 
 .addTaskButton,
 .deleteButton {
-    border: none;
-    font-weight: bold;
-    cursor: pointer;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
 }
 
 .addTaskButton {
-    height: 35px;
-    border-radius: 3px;
-    padding: 0 10px;
-    font-size: 18px;
-    background-color: var(--diabled);
+  height: 35px;
+  border-radius: 3px;
+  padding: 0 10px;
+  font-size: 18px;
+  background-color: var(--diabled);
 }
 
 .deleteButton {
-    padding: 10px;
-    background-color: var(--secondary);
-    color: var(--light);
+  padding: 10px;
+  background-color: var(--secondary);
+  color: var(--light);
 }
 
-.tarea{
-    background-color: var(--primary);
-    color: var(--light);
-    padding: 0.5px;
-    font-family:'Lato';
-    font-size: 17px;
-    margin-top: 15px;
-    border-radius: 5px;
+.tarea {
+  background-color: var(--primary);
+  color: var(--light);
+  padding: 0.5px;
+  font-family: "Lato";
+  font-size: 17px;
+  margin-top: 15px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.text {
+  margin-left: 10px;
+}
+
+#warnings {
+  text-align: center;
+  font-family: "Lato";
+  font-size: 17px;
+  color: var(--secondary);
+}
+
+.card {
+  border-radius: 5px;
+}
+
+.collection-item {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--primary);
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* .weather-carta {
+  margin: 20px 20px;
+  background: var(--text-color);
+  color: var(--bg-color);
+  padding: 20px;
+  text-align: center;
+  border-radius: 3px;
+  display: none;
+  height: auto;
+}
+
+.city {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+.date {
+  font-size: 0.9rem;
+  margin-bottom: 2rem;
+}
+
+.temperature {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.temp-img {
+  width: 50px;
+  margin-right: 10px;
+}
+
+.temp {
+  font-size: 2.2rem;
+  font-weight: bold;
+}
+
+.weather {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+} */
+
+
+.temp-img{
+    width: 10%;
+    margin-right: 10px;
+}
+.temperature{
     display: flex;
-    justify-content: space-between;
-    
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+.temp{
+    font-size: 20px;
+    font-family: 'Lato';
+    font-weight: bold
+}
+.weather{
+    font-family: 'Lato';
+    font-weight: bold;
+    font-size: 15px;
+}
+.city {
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+    font-family: 'Lato';
 }
 
-.text{
-    margin-left: 10px;
-}
-
-#warnings{
-    text-align: center;
-    font-family:'Lato';
-    font-size: 17px;
-    color: var(--secondary);
-  
-    
-}
-
-.card{
-    border-radius: 5px;
-}
-
-.collection-item{
-    list-style: none;
+.weather-carta{
     display: flex;
-    justify-content: space-between;
-    background-color: var(--primary);
-    margin-bottom: 10px;
-    text-align: center;
-   
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
 }
 
+.arreglo{
+    display: block;
+}
+
+.range{
+    display: flex;
+    font-family: 'Lato';
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.city{
+    font-family: 'Lato';
+    font-weight: bold;
+}
